@@ -3,12 +3,12 @@ import picamera
 import time 
 import os 
 
+camera = picamera.PiCamera()
 button1    = Button(27)
 button2    = Button(15)
 button3    = Button(17)
 button4    = Button(18)
 interrupt = 1
-camera = picamera.PiCamera()
 
 
 def enablecamera():
@@ -19,9 +19,10 @@ def disablecamera():
 
 
 def main():
+    print("L'applicazione è in esecuzione...")
     while(interrupt == 1):
         if (button1.is_pressed):
-            print("spengo...")
+            print("SPENGO")
         elif(button2.is_pressed):
             button_clicked = True
             while(button_clicked):
