@@ -25,17 +25,21 @@ def main():
             
         elif(button2.is_pressed):
             buttonClicked = True
-            while(button_clicked):
-                enablecamera()
-                if (button2.is_pressed):
+        
+        while(button_clicked):
+            enablecamera()
+            if(button2.is_pressed):
                     disablecamera()
                     button_clicked = False
     
         elif(button3.is_pressed):
             #do something with button3 
-
+        
         elif(button4.is_pressed):
             os.system('~/openauto/bin/autoapp')
+        
+        else: 
+            print("blabla")
 
 if __name__ == "__main__":
     main()
