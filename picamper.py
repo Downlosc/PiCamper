@@ -25,9 +25,9 @@ def main():
             button_clicked = True
             while(button_clicked):
                 camera.start_preview()
-                if(button3.is_pressed):
-                    camera.stop_preview()
-                    button_clicked = False
+                # if(button3.is_pressed):
+                #     camera.stop_preview()
+                #     button_clicked = False
         elif(button3.is_pressed):
             print("3")
         elif(button4.is_pressed):
