@@ -19,12 +19,12 @@ def main():
     while(interrupt == 1):
         if (button1.is_pressed):
             print("SPENGO")
+            camera.start_preview()
         elif(button2.is_pressed):
             print("prova")
             button_clicked = True
             while(button_clicked):
                 print("debug")
-                camera = picamera.PiCamera()
                 camera.start_preview()
                 # if(button3.is_pressed):
                 #     camera.stop_preview()
