@@ -25,6 +25,7 @@ def main():
             button_clicked = True
             while(button_clicked):
                 enablecamera()
+                time.sleep(5)
                 if(button2.is_pressed):
                     disablecamera()
                     button_clicked = False
