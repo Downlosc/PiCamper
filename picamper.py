@@ -19,16 +19,14 @@ def main():
     while(interrupt == 1):
         if (button1.is_pressed):
             print("SPENGO")
-            camera.start_preview()
         elif(button2.is_pressed):
             print("prova")
             button_clicked = True
+            camera.start_preview()
             while(button_clicked):
-                print("debug")
-                camera.start_preview()
-                # if(button3.is_pressed):
-                #     camera.stop_preview()
-                #     button_clicked = False
+                if(button3.is_pressed):
+                    camera.stop_preview()
+                    button_clicked = False
         elif(button3.is_pressed):
             print("3")
         elif(button4.is_pressed):
