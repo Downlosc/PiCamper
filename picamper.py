@@ -7,11 +7,11 @@ button1    = Button(27)
 button2    = Button(15)
 button3    = Button(17)
 button4    = Button(18)
-camera     = picamera.PiCamera()
 interrupt = 1
 
 def enablecamera():
-     camera.start_preview()
+    camera = picamera.PiCamera()
+    camera = camera.start_preview()
 
 def disablecamera():
     camera.stop_preview()
@@ -25,7 +25,6 @@ def main():
             button_clicked = True
             while(button_clicked):
                 enablecamera()
-                time.sleep(5)
                 if(button3.is_pressed):
                     disablecamera()
                     button_clicked = False
