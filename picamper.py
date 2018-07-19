@@ -19,6 +19,7 @@ def main():
     while(interrupt == 1):
         if (button1.is_pressed):
             print("SPENGO")
+            os.system('sudo halt')
         elif(button2.is_pressed):
             print("prova")
             button_clicked = True
