@@ -3,7 +3,6 @@ import picamera
 import time 
 import os 
 
-camera = picamera.PiCamera()
 button1    = Button(27)
 button2    = Button(15)
 button3    = Button(17)
@@ -16,6 +15,7 @@ interrupt = 1
 
 def main():
     print("L'applicazione è in esecuzione...")
+    camera = picamera.PiCamera()
     while(interrupt == 1):
         time.sleep(0.5)
         if (button1.is_pressed):
@@ -27,7 +27,6 @@ def main():
                 camera.start_preview()
                 if(button3.is_pressed):
                     camera.stop_preview()
-                    camera.close()
                     button_clicked = False
         elif(button3.is_pressed):
             print("3")
