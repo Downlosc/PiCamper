@@ -11,26 +11,23 @@ button4    = Button(18)
 interrupt = 1
 
 
-def enablecamera():
-    camera.start_preview()
 
-def disablecamera():
-    camera.stop_preview()
 
 
 def main():
     print("L'applicazione è in esecuzione...")
     while(interrupt == 1):
+        time.sleep(0.5)
         if (button1.is_pressed):
             print("SPENGO")
         elif(button2.is_pressed):
             print("prova")
-            # button_clicked = True
-            # while(button_clicked):
-            #     enablecamera()
-            #     if(button3.is_pressed):
-            #         disablecamera()
-            #         button_clicked = False
+            button_clicked = True
+            while(button_clicked):
+                camera.start_preview()
+                if(button3.is_pressed):
+                    camera.stop_preview()
+                    button_clicked = False
         elif(button3.is_pressed):
             print("3")
         elif(button4.is_pressed):
