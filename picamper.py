@@ -17,7 +17,6 @@ def main():
     print("L'applicazione è in esecuzione...")
     camera = picamera.PiCamera()
     while(interrupt == 1):
-        time.sleep(0.5)
         if (button1.is_pressed):
             print("SPENGO")
         elif(button2.is_pressed):
