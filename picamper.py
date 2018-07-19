@@ -23,6 +23,7 @@ def main():
             print("prova")
             button_clicked = True
             while(button_clicked):
+                print("debug")
                 camera.start_preview()
                 # if(button3.is_pressed):
                 #     camera.stop_preview()
