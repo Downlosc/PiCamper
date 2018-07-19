@@ -27,6 +27,7 @@ def main():
                 camera.start_preview()
                 if(button3.is_pressed):
                     camera.stop_preview()
+                    camera.close()
                     button_clicked = False
         elif(button3.is_pressed):
             print("3")
@@ -35,4 +36,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
