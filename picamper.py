@@ -10,12 +10,11 @@ button4    = Button(18)
 interrupt = 1
 
 def enablecamera():
-    camera = picamera.PiCamera()
     camera.start_preview()
 
 def disablecamera():
     camera.stop_preview()
-    camera.close()
+
 
 def main():
     while(interrupt == 1):
