@@ -7,7 +7,7 @@ button1    = Button(27)
 button2    = Button(15)
 button3    = Button(17)
 button4    = Button(18)
-camera     = PiCamera()  
+camera     = picamera.PiCamera()
 interrupt = 1
 
 def enablecamera():
