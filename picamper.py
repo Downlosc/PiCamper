@@ -24,6 +24,7 @@ def main():
             button_clicked = True
             while(button_clicked):
                 print("debug")
+                camera = picamera.PiCamera()
                 camera.start_preview()
                 # if(button3.is_pressed):
                 #     camera.stop_preview()
