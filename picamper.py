@@ -17,29 +17,21 @@ def disablecamera():
     camera.stop_preview()
     camera.close()
 
-
 def main():
-    while(interrupt ==  1):
-        if(button1.is_pressed):
-            os.system('sudo halt')
-            
+    while(interrupt == 1):
+        if (button1.is_pressed):
+            print("spengo...")
         elif(button2.is_pressed):
-            buttonClicked = True
-        
-        while(button_clicked):
-            enablecamera()
-            if(button2.is_pressed):
+            button_clicked = True
+            while(button_clicked):
+                enablecamera()
+                if(button2.is_pressed):
                     disablecamera()
                     button_clicked = False
-    
         elif(button3.is_pressed):
-            #do something with button3 
-        
+            print("3")
         elif(button4.is_pressed):
-            os.system('~/openauto/bin/autoapp')
-        
-        else: 
-            print("blabla")
+            print("openauto is starting")
 
 if __name__ == "__main__":
     main()
