@@ -24,12 +24,13 @@ def main():
         if (button1.is_pressed):
             print("SPENGO")
         elif(button2.is_pressed):
-            button_clicked = True
-            while(button_clicked):
-                enablecamera()
-                if(button3.is_pressed):
-                    disablecamera()
-                    button_clicked = False
+            print("prova")
+            # button_clicked = True
+            # while(button_clicked):
+            #     enablecamera()
+            #     if(button3.is_pressed):
+            #         disablecamera()
+            #         button_clicked = False
         elif(button3.is_pressed):
             print("3")
         elif(button4.is_pressed):
