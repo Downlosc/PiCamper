@@ -31,6 +31,7 @@ def main():
             print("3")
         elif(button4.is_pressed):
             print("openauto is starting")
+            os.system('~/openauto/bin/autoapp')
 
 if __name__ == "__main__":
     main()
