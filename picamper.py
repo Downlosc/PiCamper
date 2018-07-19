@@ -8,6 +8,8 @@ button2    = Button(15)
 button3    = Button(17)
 button4    = Button(18)
 interrupt = 1
+camera = picamera.PiCamera()
+
 
 def enablecamera():
     camera.start_preview()
