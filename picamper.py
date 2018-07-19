@@ -11,7 +11,7 @@ interrupt = 1
 
 def enablecamera():
     camera = picamera.PiCamera()
-    camera = camera.start_preview()
+    camera.start_preview()
 
 def disablecamera():
     camera.stop_preview()
