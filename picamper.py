@@ -26,7 +26,7 @@ def main():
             while(button_clicked):
                 enablecamera()
                 time.sleep(5)
-                if(button2.is_pressed):
+                if(button3.is_pressed):
                     disablecamera()
                     button_clicked = False
         elif(button3.is_pressed):
