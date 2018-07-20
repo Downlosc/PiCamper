@@ -56,10 +56,11 @@ def main():
                     heading()
         elif(button3.is_pressed):
             print("LA TELECAMERA DEVE ESSERE ACCESA")
+            heading()
         elif(button4.is_pressed):
             print("openauto is starting")
             os.system('~/openauto/bin/autoapp')
-            
+
 
 if __name__ == "__main__":
     main()
